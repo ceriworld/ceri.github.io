@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CERI</title>
+    <link>https://ceri-institute.org/</link>
+    <description>Recent content on CERI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Feb 2018 13:42:49 -0500</lastBuildDate>
+    
+	<atom:link href="https://ceri-institute.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>/Contact</title>
+      <link>https://ceri-institute.org/contactus/</link>
+      <pubDate>Tue, 13 Feb 2018 13:42:49 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/contactus/</guid>
+      <description>Email: inquiry@ceri-institute.org</description>
+    </item>
+    
+    <item>
+      <title>/About CERI</title>
+      <link>https://ceri-institute.org/about/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/about/</guid>
+      <description>CERI is devoted to helping institutions and governments improve social policy. We work with executive boards, organizational leaders, and other data-driven entities to fill information gaps and solve complex problems.
+To achieve our goals, we build diverse research teams with a global reach. Depending on the task, our teams may include open source specialists; public policy experts; financial analysts, media and public relations specialists; marketing professionals; business and not-for-profit leaders; academics; and experts in social media analysis; as well as former elected officials, investigative journalists, government investigators, and intelligence professionals.</description>
+    </item>
+    
+    <item>
+      <title>/Issues</title>
+      <link>https://ceri-institute.org/issues/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/issues/</guid>
+      <description>CERI is committed to improving social policy across the board. There is no problem to small or too large for our firm. We work in education from preschool to postsecondary covering all branches and pathways that intersect this field. If it effects the lives of people, we can help.</description>
+    </item>
+    
+    <item>
+      <title>/Populations</title>
+      <link>https://ceri-institute.org/populations/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/populations/</guid>
+      <description>CERI is invested to learn and grow with all populations to improve their lives or lives they may influence. We work with individuals, families, and children.</description>
+    </item>
+    
+    <item>
+      <title>/Projects</title>
+      <link>https://ceri-institute.org/projects/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/projects/</guid>
+      <description>Welcome to the blog section! This page uses the default list.html template. Write anything you like here. You can set this text with your _index.md in the /content/posts/ folder.</description>
+    </item>
+    
+    <item>
+      <title>/publications</title>
+      <link>https://ceri-institute.org/publications/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/publications/</guid>
+      <description>Welcome to the blog section! This page uses the default list.html template. Write anything you like here. You can set this text with your _index.md in the /content/posts/ folder.</description>
+    </item>
+    
+    <item>
+      <title>/Questions</title>
+      <link>https://ceri-institute.org/questions/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/questions/</guid>
+      <description>In order to provide the best solution we begin by asking and forming the right questions. Through a partnerships and relationships, we make sure to collaborate and focus on the questions that matter most to policymakers and practitioners.</description>
+    </item>
+    
+    <item>
+      <title>/Solutions</title>
+      <link>https://ceri-institute.org/solutions/</link>
+      <pubDate>Tue, 13 Feb 2018 12:21:57 -0500</pubDate>
+      
+      <guid>https://ceri-institute.org/solutions/</guid>
+      <description>CERI is committed to filling information gaps and developing solutions through proven empirically based research methods.</description>
+    </item>
+    
+  </channel>
+</rss>
