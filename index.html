@@ -30,7 +30,7 @@
   }
 
   nav {
-    text-align: right;
+    text-align: left;
   }
 
   body {
@@ -43,14 +43,28 @@
   h2, h3, h4, h5 {
     color: #6bf;
   }
-  
+
+
   @media (prefers-color-scheme: dark) {
-    html { background: #1c1c1c; color: white; text-decoration: none; }
-    a { color: #fff; text-decoration: none; }
-    a:visited { color: rgb(255, 255, 255); text-decoration: none; }
-    a:active { color: rgb(255, 255, 255); text-decoration: none; }
+    html { background: #ffffff; color: #000; text-decoration: none; }
+    a { color: #000000; text-decoration: none; }
+    a:visited { color: #000000; text-decoration: none; }
+    a:active { color: #000; text-decoration: none; }
     a:hover {color: #6bf}
   }
+
+/* Styles for the footer */
+footer {
+            background-color: #333; /* Dark grey background color */
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            
+        }
 </style>
 
 <h1>CERI</h1> <span style="font-size:15px">Improving Policy Through Research.</span>
@@ -60,10 +74,8 @@
 <nav>
     <em>home</em> ·
     <a href="about.html">about</a> ·
-    <a href="topics.html">topics</a> ·
-    <a href="data.html">data</a> ·
-    <a href="contact.html">contact</a> ·
-    <a href="donate.html">donate</a>
+    <a href="library.html">library</a> ·
+    <a href="contact.html">contact</a>
   </nav>
 
 <br>
@@ -75,5 +87,11 @@
 
 </head>
 
-<p>CERI is a nonpartisan, nonprofit research agency devoted to affecting social and education policy throughout the world. Our two primary locations include the United States and Colombia. Using an integrative approach that includes both empirical and theoretical methods we design and evaluate existing policy, ideas, and programs. Our funders allow us to communicate our findings to practitioners and policymakers with the goals of improving the lives of families, children, and to work towards equity among all, and to improve learning for the lives of individuals and nations.</p> 
+<h3>Latest News</h3> 
 
+
+
+<!-- Footer -->
+<footer>
+  <p>CERI &copy; 2012-2024</p>
+</footer>
