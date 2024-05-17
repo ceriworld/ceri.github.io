@@ -1,0 +1,99 @@
+/* Styles for the thin line divider */
+.section-divider {
+    width: 2cm;
+    border-bottom: 3px solid #009EDB; /* Thin line with a light gray color */
+    margin-bottom: 20px; /* Adjust spacing after the divider */
+}
+h1 {
+    font-family: Garamond;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+  
+nav {
+    text-align: left;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1365px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+  
+h2, h3, h4, h5 {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }  
+  
+  .footer-content p {
+    margin: 0;
+    margin-right: 0px;
+    border-right: 1px solid #fff; /* Thin white line */
+    padding-right: 20px; /* Space between text and line */
+  }
+  
+  .footer-content a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .footer-content a:hover {
+    color: #009EDB; /* Light blue color on hover */
+  }
+  
+  
+/* Navbar styles */
+.navbar {
+    display: flex;
+    background-color: #4d4d4d;
+    padding: 1px 0;
+}
+  
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-right: 1px solid #fff;
+    
+}
+  
+.navbar a:hover {
+    background-color: #fff;
+    color: #000;
+}
+  
+a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+a:hover {
+  color: #009EDB
+}
+
+
+#zulu-time {
+  padding-left: 20px; /* Adjust the padding value as needed */
+}

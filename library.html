@@ -14,6 +14,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="style.css">
 
 <script type="application/javascript">
   var doNotTrack = false;
@@ -26,60 +27,17 @@
   </script>
 <title>CERI | Improving Policy Through Research.</title>
 
-
-<style>
-  h1 {
-    font-family: Garamond;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-
-  nav {
-    text-align: left;
-  }
-
-  body {
-    font-family: Garamond;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 8px;
-  }
-
-  h2, h3, h4, h5 {
-    color: #6bf;
-  }
-
-
-  @media (prefers-color-scheme: dark) {
-    html { background: #ffffff; color: #000; text-decoration: none; }
-    a { color: #000000; text-decoration: none; }
-    a:visited { color: #000000; text-decoration: none; }
-    a:active { color: #000; text-decoration: none; }
-    a:hover {color: #6bf}
-  }
-/* Styles for the footer */
-footer {
-            background-color: #333; /* Dark grey background color */
-            color: #fff;
-            padding: 2px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            
-        }
-</style>
-
-<h1>CERI</h1> <span style="font-size:15px">Improving Policy Through Research.</span>
+<h1><a href="index.html"><img src="logo_ceri.png" alt="CERI Logo" style="height: 80px; width: auto;"></a></h1>
 
 <br><br><br>
 
 <nav>
-    <a href="index.html">home</a> ·
-    <a href="about.html">about</a> ·
-    <em>library</em> ·
-    <a href="contact.html">contact</a>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="library.html">Library</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
 <br>
@@ -87,9 +45,30 @@ footer {
 </head>
 
 <h3>Latest Reviews</h3> 
+<div class="section-divider"></div>
 
 
 <!-- Footer -->
 <footer>
-  <p>CERI &copy; 2012-2024</p>
+  <div class="footer-content">
+      <p><a href="index.html">CERI &copy; 2012 - 2024</a></p>
+      <p><a href="#copyright">copyright</a>
+      <a href="#privacy">privacy notice</a>
+      <a href="#terms">terms of use</a></p>
+      <span id="zulu-time"></span>
+  </div>
 </footer>
+
+<script>
+  function updateZuluTime() {
+      const now = new Date();
+      const zuluTimeString = now.toISOString().split('T')[1].split('.')[0] + ' z';
+      document.getElementById('zulu-time').textContent = zuluTimeString;
+  }
+
+  // Update Zulu time every second
+  setInterval(updateZuluTime, 1000);
+
+  // Initial update
+  updateZuluTime();
+</script>
