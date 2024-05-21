@@ -97,3 +97,37 @@ a:hover {
 #zulu-time {
   padding-left: 20px; /* Adjust the padding value as needed */
 }
+
+@media only screen and (max-width: 768px) {
+  /* Styles for screens less than 768px wide */
+  h1 {
+      font-size: 1.5rem;  /* Adjust font-size for better readability */
+      margin-top: 20px;  /* Adjust margin for better spacing */
+  }
+  
+  h2, h3, h4, h5 {
+      font-size: 18px;  /* Adjust font-size for smaller screens */
+  }
+  
+  .navbar a {
+      font-size: 12px;  /* Adjust font-size for smaller screens */
+      padding: 5px 10px;  /* Adjust padding for better touch targets */
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    font-size: .5rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }  
+  
+}
