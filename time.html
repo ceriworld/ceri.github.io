@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding-top: 7%;
+        }
+        .time-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .time-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 26px;
+        }
+        .label {
+            width: 100px; /* Adjust the width as needed to align colons */
+            text-align: right;
+            margin-right: 10px;
+            font-size: 26px;
+        }
+        .value {
+            text-align: left;
+            font-size: 26px;
+        }
+    </style>
+    <script type="application/javascript">
+        var doNotTrack = false;
+        if (!doNotTrack) {
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-49482363-10', 'auto');
+          
+          ga('send', 'pageview');
+        }
+        </script>
+</head>
+<body>
+    <div class="time-container">
+        <div class="time-item">
+            <div class="label">z:</div>
+            <div class="value" id="zulu-time"></div>
+        </div>
+        <div class="time-item">
+            <div class="label">Bogotá:</div>
+            <div class="value" id="bogota-time"></div>
+        </div>
+        <div class="time-item">
+            <div class="label">Paris:</div>
+            <div class="value" id="paris-time"></div>
+        </div>
+        <div class="time-item">
+            <div class="label">Date:</div>
+            <div class="value" id="bogota-date"></div>
+        </div>
+    </div>
+
+    <script>
+        function formatDate(date) {
+            const hours = String(date.getUTCHours()).padStart(2, '0');
+            const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+            const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+            return `${hours}:${minutes}:${seconds}`;
+        }
+
+        function formatDateDate(date) {
+            const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+            const day = String(date.getUTCDate()).padStart(2, '0');
+            const year = String(date.getUTCFullYear()).slice(-2);
+            return `${month}.${day}.${year}`;
+        }
+
+        function updateTitleZuluTime() {
+            const now = new Date();
+            const zuluTime = formatDate(now);
+            document.title = `${zuluTime} z`;
+        }
+
+        function updateTime() {
+            const now = new Date();
+
+            // Zulu time (UTC)
+            const zuluTime = formatDate(now);
+
+            // Bogotá time (UTC-5)
+            const bogotaTimeOffset = -5 * 60 * 60 * 1000;
+            const bogotaTime = formatDate(new Date(now.getTime() + bogotaTimeOffset));
+
+            // Paris time (UTC+2)
+            const parisTimeOffset = 2 * 60 * 60 * 1000;
+            const parisTime = formatDate(new Date(now.getTime() + parisTimeOffset));
+
+            // Today's date in Bogotá time
+            const bogotaDate = formatDateDate(new Date(now.getTime() + bogotaTimeOffset));
+
+            document.getElementById('zulu-time').textContent = zuluTime;
+            document.getElementById('bogota-time').textContent = bogotaTime;
+            document.getElementById('paris-time').textContent = parisTime;
+            document.getElementById('bogota-date').textContent = bogotaDate;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+        setInterval(updateTitleZuluTime, 1000);
+
+        // Initial call to display time immediately on load
+        updateTime();
+        updateTitleZuluTime();
+    </script>
+</body>
+</html>

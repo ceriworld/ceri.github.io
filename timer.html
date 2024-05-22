@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chronometer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        #timer {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+        }
+        button {
+            padding: 2px 5px;
+            font-size: 10px;
+            cursor: pointer;
+            flex-grow: 1;
+        }
+    </style>
+    <script type="application/javascript">
+        var doNotTrack = false;
+        if (!doNotTrack) {
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-49482363-10', 'auto');
+          
+          ga('send', 'pageview');
+        }
+        </script>
+</head>
+<body>
+    <div id="timer">00:00:00</div>
+    <div class="button-container">
+        <button id="startButton">ET</button>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <script>
+        let startTime;
+        let running = false;
+        let elapsedTime = 0;
+        let interval;
+
+        function startTimer() {
+            if (!running) {
+                startTime = Date.now() - elapsedTime;
+                interval = setInterval(updateTimer, 1000);
+                running = true;
+                document.getElementById('startButton').textContent = 'Pause';
+            } else {
+                clearInterval(interval);
+                running = false;
+                elapsedTime = Date.now() - startTime;
+                document.getElementById('startButton').textContent = 'Resume';
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(interval);
+            running = false;
+            elapsedTime = 0;
+            document.getElementById('timer').textContent = '00:00:00';
+            document.title = 'chronometer';
+            document.getElementById('startButton').textContent = 'ET';
+        }
+
+        function updateTimer() {
+            const currentTime = Date.now();
+            elapsedTime = currentTime - startTime;
+            const hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+            const minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+            const formattedTime = `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
+            document.getElementById('timer').textContent = formattedTime;
+            document.title = formattedTime;
+        }
+
+        function padZero(num) {
+            return num < 10 ? `0${num}` : num;
+        }
+
+        document.getElementById('startButton').addEventListener('click', startTimer);
+        document.getElementById('resetButton').addEventListener('click', resetTimer);
+    </script>
+</body>
+</html>
