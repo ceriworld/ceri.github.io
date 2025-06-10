@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Improving Policy Through Research">
+<meta http-equiv="onion-location" content="http://o4tvvmbum3oqa4ebrzs6q73lhspguvzcqnn3xu67ey7nmpd27pxxnwid.onion/en">
+<link rel="icon" type="image/png" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="../style.css">
+
+<script type="application/javascript">
+  var doNotTrack = false;
+  if (!doNotTrack) {
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-49482363-10', 'auto');
+    
+    ga('send', 'pageview');
+  }
+
+</script>
+
+  <title>CERI | Improving Policy Through Research.</title>
+</head>
+
+<body>
+
+  <h1>
+    <a href="index.html">
+      <img src="/logo_ceri.png" alt="CERI Logo" style="height: 80px; width: auto;">
+    </a>
+  </h1>
+
+  <br><br><br>
+
+  <nav>
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/publications.html">Publications</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </nav>
+
+<h6>Exploring the Critical in Literacy: A Multi-Case Study</h6> 
+<div class="publication-block">
+  <div class="meta-tags">
+    <span class="tag">Policy paper</span>
+    <span class="separator">•</span>
+    <span class="meta-link" id="infoBtn" style="cursor: pointer; color: #009EDB; text-decoration: underline;">More info</span>
+    <span class="separator">•</span>
+    <span class="date">10 June 2025</span>
+  </div>
+
+<div class="action-buttons">
+  <a href="/content/publications/reports/2025/6cz27s3e-en.pdf" download>
+  <button class="download-btn">Download PDF</button></a>
+  <button class="cite-btn" id="citeBtn">Cite this publication</button>
+</div>
+
+<!-- Cite Modal -->
+<div id="citeModal" class="modal">
+  <div class="modal-content">
+    <span class="close cite-close">&times;</span>
+    <h3>Cite this content as:</h3>
+    <p>
+  CERI. (2025). <em>Exploring the critical in literacy: A multi-case study</em>. CERI Publishing, New York, NY. 
+  <a href="https://doi.org/10.64049/6cz27s3e-en" target="_blank">https://doi.org/10.64049/6cz27s3e-en</a>
+</p>
+  </div>
+</div>
+
+<!-- More Info Modal -->
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span class="close info-close">&times;</span>
+    <h3>More info</h3>
+    <p><strong>DOI:</strong><br>
+    <a href="https://doi.org/10.64049/6cz27s3e-en" target="_blank">https://doi.org/10.64049/6cz27s3e-en</a></p>
+    <p><strong>Author(s):</strong><br>CERI</p>
+  </div>
+</div>
+
+
+  <div class="abstract-line">
+    <div class="abstract-heading">Abstract</div>
+    <div class="abstract-text">
+      This case study explores how identity, cultural capital, social relationships, and power dynamics shape student engagement and motivation in critical literacy classrooms. Using Bourdieu’s theories of habitus, cultural and social capital, and frameworks from critical literacy scholars such as Allan Luke and Hilary Janks, the study examines three students: Daniella (private bilingual school), Sara (rural public school), and Isabella (homeschooled). Findings reveal that prescribed school texts often fail to engage students like Sara and Daniella due to a mismatch with their cultural backgrounds. In contrast, Isabella’s personalized curriculum supports deep engagement, showing the value of aligning instruction with students’ lived experiences.
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <div class="footer-content">
+      <p><a href="index.html">CERI &copy; 2012 - 2025</a></p>
+      <p><a href="copyright.html">copyright</a>
+      <a href="privacy-notice.html">privacy notice</a>
+      <a href="terms-of-use.html">terms of use</a></p>
+      <span id="zulu-time"></span>
+    </div>
+  </footer>
+
+  <script>
+    function updateZuluTime() {
+        const now = new Date();
+        const zuluTimeString = now.toISOString().split('T')[1].split('.')[0] + ' z';
+        document.getElementById('zulu-time').textContent = zuluTimeString;
+    }
+    setInterval(updateZuluTime, 1000);
+    updateZuluTime();
+  </script>
+
+<script>
+  // Modal elements
+  const citeModal = document.getElementById('citeModal');
+  const citeBtn = document.getElementById('citeBtn');
+  const citeClose = document.querySelector('.cite-close');
+
+  const infoModal = document.getElementById('infoModal');
+  const infoBtn = document.getElementById('infoBtn');
+  const infoClose = document.querySelector('.info-close');
+
+  // Cite Modal logic
+  citeBtn.onclick = () => citeModal.style.display = 'block';
+  citeClose.onclick = () => citeModal.style.display = 'none';
+
+  // Info Modal logic
+  infoBtn.onclick = () => infoModal.style.display = 'block';
+  infoClose.onclick = () => infoModal.style.display = 'none';
+
+  // Close any modal when clicking outside
+  window.onclick = function(event) {
+    if (event.target === citeModal) citeModal.style.display = 'none';
+    if (event.target === infoModal) infoModal.style.display = 'none';
+  };
+</script>
+</body>
+</html>

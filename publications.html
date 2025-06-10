@@ -25,13 +25,20 @@
     ga('send', 'pageview');
   }
   </script>
-<title>CERI | Improving Policy Through Research.</title>
+  <title>CERI | Improving Policy Through Research.</title>
+</head>
 
-<h1><a href="index.html"><img src="logo_ceri.png" alt="CERI Logo" style="height: 80px; width: auto;"></a></h1>
+<body>
 
-<br><br><br>
+  <h1>
+    <a href="index.html">
+      <img src="logo_ceri.png" alt="CERI Logo" style="height: 80px; width: auto;">
+    </a>
+  </h1>
 
-<nav>
+  <br><br><br>
+
+  <nav>
     <div class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -40,35 +47,53 @@
     </div>
   </nav>
 
-<br>
+  <br>
 
-</head>
+  <h3>Policy papers and briefs</h3> 
+  <div class="section-divider"></div>
+<div id="publications">
+  <div class="container">
+    <div class="policy-brief">
+      <div class="title">
+        <a href="publications/literacy-identity-and-power-in-critical-literacy-classrooms-DOIDOI-en.html">Literacy, identity, and power in critical literacy classrooms</a>
+      </div>
+      <div class="subtext">
+        Policy brief · June 2025<br>
+      </div>
+    </div>
 
-<h3>Featured publications</h3> 
-<div class="section-divider"></div>
+    <hr class="divider">
 
+    <div class="policy-brief">
+      <div class="title">
+        <a href="publications/exploring-the-critical-in-literacy-a-multi-case-study-6cz27s3e-en.html">Exploring the critical in literacy: a multi-case study</a>
+      </div>
+      <div class="subtext">
+        Policy paper · June 2025<br>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-content">
+  <footer>
+    <div class="footer-content">
       <p><a href="index.html">CERI &copy; 2012 - 2025</a></p>
       <p><a href="copyright.html">copyright</a>
       <a href="privacy-notice.html">privacy notice</a>
       <a href="terms-of-use.html">terms of use</a></p>
       <span id="zulu-time"></span>
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<script>
-  function updateZuluTime() {
-      const now = new Date();
-      const zuluTimeString = now.toISOString().split('T')[1].split('.')[0] + ' z';
-      document.getElementById('zulu-time').textContent = zuluTimeString;
-  }
+  <script>
+    function updateZuluTime() {
+        const now = new Date();
+        const zuluTimeString = now.toISOString().split('T')[1].split('.')[0] + ' z';
+        document.getElementById('zulu-time').textContent = zuluTimeString;
+    }
+    setInterval(updateZuluTime, 1000);
+    updateZuluTime();
+  </script>
 
-  // Update Zulu time every second
-  setInterval(updateZuluTime, 1000);
-
-  // Initial update
-  updateZuluTime();
-</script>
+</body>
+</html>
