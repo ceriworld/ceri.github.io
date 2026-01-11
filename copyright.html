@@ -7,45 +7,38 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate">
+<meta name="author" content="Centre of Economic Research and Intergovernmental Co-operation">
 <meta name="description" content="Improving Policy Through Research">
-<meta http-equiv="onion-location" content="http://o4tvvmbum3oqa4ebrzs6q73lhspguvzcqnn3xu67ey7nmpd27pxxnwid.onion/en">
-<link rel="icon" type="image/png" href="/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<title>The Centre for Economic Research and Intergovernmental Co-operation | CERI</title>
+<link rel="icon" type="image/png" href="/favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="style.css">
-
-<script type="application/javascript">
-  var doNotTrack = false;
-  if (!doNotTrack) {
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-49482363-10', 'auto');
-    
-    ga('send', 'pageview');
-  }
-  </script>
-<title>CERI | Improving Policy Through Research.</title>
-
-<h1><a href="index.html"><img src="logo_ceri.png" alt="CERI Logo" style="height: 80px; width: auto;"></a></h1>
-
-<br><br><br>
-
-<nav>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
-
-<br>
-
+<script src="https://kit.fontawesome.com/a1e5bdb7bf.js" crossorigin="anonymous"></script>
+<script src="scripts.js" defer></script>
 </head>
 <body>
 
-<h3>Copyright © CERI</h3>
+<header class="site-header-bar">
+  <div class="header-inner">
+    <div class="site-header">
+      <a href="index.html">CERI</a>
+    </div>
+    <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+    <nav class="header-nav" id="header-nav">
+      <a href="publications.html">Publications</a>
+      <a href="newsroom.html">News & events</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+ <div class="page-wrapper">
+
+<h3>Copyright © CERI | Centre for Economic Research and Intergovernmental Co-operation</h3>
 <div class="section-divider"></div>
 All rights reserved.
 
@@ -54,30 +47,26 @@ All rights reserved.
 <p>None of the materials provided on this web site may be used, reproduced or transmitted, in whole or in part, in any form or by any means, electronic or mechanical, including photocopying, recording or the use of any information storage and retrieval system, except as provided for in the Terms and Conditions of Use of CERI Web Sites, without permission in writing from the publisher.</p>
 
 <p>News-related material can be used as long as the appropriate credit is given and CERI is advised.</p>
+</div>
 
-<br><br><br>
 
 <!-- Footer -->
-<footer>
-  <div class="footer-content">
-      <p><a href="index.html">CERI &copy; 2012 - 2026</a></p>
-      <p><a href="copyright.html">copyright</a>
-      <a href="privacy-notice.html">privacy notice</a>
-      <a href="terms-of-use.html">terms of use</a></p>
-      <span id="zulu-time"></span>
+<footer class="site-footer-bar">
+  <div class="footer-inner">
+    <div>
+       CERI © 2026
+    </div>
+
+    <div class="footer-icons">
+      <a href="terms-of-use.html">Terms & Conditions</a>
+      <a href="privacy-notice.html">Privacy Policy</a>
+    </div>
+
+    <div>
+      <span id="ct"></span>
+    </div>
   </div>
 </footer>
 
-<script>
-  function updateZuluTime() {
-      const now = new Date();
-      const zuluTimeString = now.toISOString().split('T')[1].split('.')[0] + ' z';
-      document.getElementById('zulu-time').textContent = zuluTimeString;
-  }
-
-  // Update Zulu time every second
-  setInterval(updateZuluTime, 1000);
-
-  // Initial update
-  updateZuluTime();
-</script>
+</body>
+</html>
