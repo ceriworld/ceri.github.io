@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate">
+<meta name="author" content="Centre of Economic Research and Intergovernmental Co-operation">
+<meta name="description" content="Improving Policy Through Research">
+<title>Colombia | CERI</title>
+<link rel="icon" type="image/png" href="../favicon-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../style.css">
+<script src="https://kit.fontawesome.com/a1e5bdb7bf.js" crossorigin="anonymous"></script>
+<script src="../scripts.js" defer></script>
+
+</head>
+<body>
+
+<header class="site-header-bar">
+  <div class="header-inner">
+    <div class="site-header">
+      <a href="../index.html">CERI</a>
+    </div>
+    <div class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+    <nav class="header-nav" id="header-nav">
+      <a href="../countries.html">Countries & regions</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../newsroom.html">News & events</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrapper page-wrapper--country">
+
+    <!-- ── Intro paragraph (matches site paragraph-line pattern) ── -->
+  <div class="country-intro">
+    <h3>Colombia and CERI</h3>
+    <p>Colombia works with CERI through international cooperation focused on data, policy analysis, and research. This collaboration supports priorities in economic development, education, and public health.</p>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- ── Country Hero ── -->
+  <div class="country-hero">
+    <div class="country-eyebrow">Country Profile</div>
+    <h1 class="country-name">Colombia</h1>
+    <div class="country-meta">
+      <div class="country-meta-item"><strong>Region</strong>&ensp;Latin America & Caribbean</div>
+      <div class="country-meta-item"><strong>Income Group</strong>&ensp;Upper middle income</div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-cell">
+        <div class="stat-label">Population (2025)</div>
+        <div class="stat-value">53.06<span style="font-size:1.1rem">M</span></div>
+        <div class="stat-sub">Dane, Colombia</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">GDP per capita (2024)</div>
+        <div class="stat-value">$7,919.21</div>
+        <div class="stat-sub">current US$</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">2026 Projected Real GDP</div>
+        <div class="stat-value stat-accent">+2.3%</div>
+        <div class="stat-sub">IMF World Economic Outlook Update</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Indicators ── -->
+  <div class="indicators-header">
+    <h3>Selected indicators</h3>
+    <p>Data sourced from World Bank, IMF, and national statistical agencies.</p>
+  </div>
+
+  <div class="charts-grid">
+
+    <!-- GDP Annual % Growth — wide line -->
+    <div class="chart-card chart-card--wide">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Economic growth</div>
+        <div class="chart-card-title">GDP — Annual % Growth</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="gdpGrowthChart" height="100"></canvas>
+      </div>
+      <div class="chart-card-source">Source: World Bank</div>
+    </div>
+
+    <!-- Unemployment — narrow bar -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Labour market</div>
+        <div class="chart-card-title">Unemployment Rate (%)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="unemploymentChart" height="180"></canvas>
+      </div>
+      <div class="chart-card-source">Source: World Bank / ILO</div>
+    </div>
+
+    <!-- Life Expectancy -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Health</div>
+        <div class="chart-card-title">Life Expectancy at Birth</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="lifeExpChart" height="180"></canvas>
+      </div>
+      <div class="chart-card-source">Source: World Bank</div>
+    </div>
+
+    <!-- Internet Users -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Digital access</div>
+        <div class="chart-card-title">Individuals Using the Internet (%)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="internetChart" height="180"></canvas>
+      </div>
+      <div class="chart-card-source">Source: World Bank / ITU</div>
+    </div>
+
+    <!-- Gini Index -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Inequality</div>
+        <div class="chart-card-title">Gini Index</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="giniChart" height="180"></canvas>
+      </div>
+      <div class="chart-card-source">Source: World Bank</div>
+    </div>
+
+    <!-- Literacy — single stat card -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Education</div>
+        <div class="chart-card-title">Adult Literacy Rate</div>
+      </div>
+      <div class="stat-card-inner">
+        <div class="big-stat-value">95.34<span style="font-size:1.8rem">%</span></div>
+        <div class="big-stat-label">of adults (15+), latest available year</div>
+      </div>
+      <div class="chart-card-source">Source: UNESCO / World Bank</div>
+    </div>
+
+    <!-- GDP Current Prices — wide area -->
+    <div class="chart-card chart-card--wide">
+      <div class="chart-card-header">
+        <div class="chart-card-label">National accounts</div>
+        <div class="chart-card-title">GDP, Current Prices (US$ billion)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="gdpCurrentChart" height="90"></canvas>
+      </div>
+      <div class="chart-card-source">Source: IMF</div>
+    </div>
+
+    <!-- Current Account Balance -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">External sector</div>
+        <div class="chart-card-title">Current Account Balance (% of GDP)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="currentAccountChart" height="180"></canvas>
+      </div>
+      <div class="chart-card-source">Source: IMF</div>
+    </div>
+
+    <!-- Real GDP Forecast — full width -->
+    <div class="chart-card chart-card--full">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Outlook</div>
+        <div class="chart-card-title">Real GDP Growth — Historical & Forecast (%)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="realGdpForecastChart" height="55"></canvas>
+      </div>
+      <div class="chart-card-source">Source: IMF World Economic Outlook</div>
+    </div>
+
+    <!-- Population Projections — wide -->
+    <div class="chart-card chart-card--wide">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Demographics</div>
+        <div class="chart-card-title">Population Projections (millions)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="populationChart" height="90"></canvas>
+      </div>
+      <div class="chart-card-source">Source: UN DESA / World Bank</div>
+    </div>
+
+    <!-- General Government Debt -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Fiscal</div>
+        <div class="chart-card-title">General Government Debt (% of GDP)</div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="govDebtChart" height="180"></canvas>
+      </div>
+      <div class="chart-card-source">Source: IMF</div>
+    </div>
+
+    <!-- Household Debt — single stat (2020 point) -->
+    <div class="chart-card">
+      <div class="chart-card-header">
+        <div class="chart-card-label">Household finance</div>
+        <div class="chart-card-title">Household Debt (% of Disposable Income, 2020)</div>
+      </div>
+      <div class="stat-card-inner">
+        <div class="big-stat-value">51.6<span style="font-size:1.8rem">%</span></div>
+        <div class="big-stat-label">of household disposable income — 2020</div>
+      </div>
+      <div class="chart-card-source">Source: OECD</div>
+    </div>
+
+  </div><!-- /.charts-grid -->
+
+</div><!-- /.page-wrapper -->
+
+<!-- Footer -->
+<footer class="site-footer-bar">
+  <div class="footer-inner">
+    <div>CERI © 2026</div>
+    <div class="footer-icons">
+      <a href="../terms-of-use.html">Terms & Conditions</a>
+      <a href="../privacy-notice.html">Privacy Policy</a>
+    </div>
+    <div><span id="ct"></span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="colombia.js"></script>
+</body>
+</html>

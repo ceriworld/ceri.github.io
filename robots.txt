@@ -1,0 +1,75 @@
+
+User-agent: *
+Disallow: /video/search/
+Disallow: /market-brief/
+Disallow: /auth/
+Disallow: /client/login*
+Disallow: /login?*
+Disallow: /public/
+Disallow: /search?*
+Disallow: /documents/
+
+Sitemap: https://www.ceri.ngo/sitemap.xml
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: NewsNow
+Disallow: /
+
+User-agent: news-please
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: Perplexity-ai
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: PiplBot
+Disallow: /
